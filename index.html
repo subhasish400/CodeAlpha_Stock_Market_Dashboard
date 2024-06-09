@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Market Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Stock Market Dashboard</h1>
+        <div class="stock-info">
+            <h2>Real-Time Stock Data</h2>
+            <div id="stock-data">
+                <!-- Stock data will be displayed here which is uplaoded by user in the form of csv format
+                 -->
+            </div>
+        </div>
+        <div class="file-upload">
+            <h2>Upload Stock Data</h2>
+            <input type="file" id="file-input" accept=".csv">
+        </div>
+        <div class="stock-chart">
+            <h2>Stock Chart</h2>
+            <canvas id="stockChart"></canvas>
+        </div>
+        <div class="financial-news">
+            <h2>Financial News</h2>
+            <div id="news-feed">
+                <!-- News feed will be displayed here which will comes from api
+                 -->
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
